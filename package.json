@@ -1,0 +1,19 @@
+{
+  "name": "tuszopedia",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Tuszopedia – statyczny poradnik o tatuażu wydawany przez SHADY TATTOO (Wieluń)",
+  "type": "commonjs",
+  "scripts": {
+    "build": "node build.js",
+    "build:preview": "node build.js --drafts",
+    "qa": "node qa.js",
+    "qa:preview": "node qa.js --dir=dist-preview --allow-drafts",
+    "check": "node build.js && node qa.js",
+    "serve": "node serve.js",
+    "serve:preview": "node serve.js --dir=dist-preview"
+  },
+  "dependencies": {
+    "marked": "^14.1.4"
+  }
+}

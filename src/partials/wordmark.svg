@@ -1,0 +1,4 @@
+<!-- Wordmark tekstowy Tuszopedii (łatwy do podmiany): zmień nazwę w <title> i <text>, a viewBox/kropkę dopasuj – albo przegeneruj wersję ze ścieżkami:
+     python3 design/poradnik/make_brand.py --name "Nowa nazwa". Wstaw INLINE w <a class="brand"> – wtedy użyje fontu z theme.css (--font-head). -->
+<svg xmlns="http://www.w3.org/2000/svg" class="wordmark" viewBox="0 0 409 112" height="40" role="img" aria-labelledby="wm-t"><title id="wm-t">Tuszopedia</title>
+<text x="8" y="82.88" style="font-family:var(--font-head,'Instrument Serif',Georgia,serif);font-size:96px" fill="currentColor">Tuszopedia</text><circle cx="391.14" cy="72.80" r="10.08" fill="#E0452B"/></svg>

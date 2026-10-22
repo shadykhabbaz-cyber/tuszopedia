@@ -1,0 +1,42 @@
+# Deploy na GitHub Pages przez Actions. Działa dopiero po utworzeniu repo i włączeniu
+# Settings → Pages → Source: "GitHub Actions". Każdy push na main: build → QA (musi być 0) → deploy.
+name: Deploy Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      # Zmień przy własnej domenie (np. https://tuszopedia.pl/)
+      BASE_URL: https://shadykhabbaz-cyber.github.io/tuszopedia/
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: node build.js
+      - run: node qa.js
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
