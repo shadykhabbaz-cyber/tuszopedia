@@ -164,6 +164,7 @@ const ICONS = [st('favicon.ico') && `<link rel="icon" href="${u('favicon.ico')}"
 const ogImg = C.defaultOgImage ? abs(C.defaultOgImage) : null;
 function page({ path: p, title, description, body, schema = [], noindex = false, type = 'website', crumbs = null, extraHead = '', scripts = '', article = null, nav = '' }) {
   const canonical = abs(p), fullTitle = p === '/' ? title : `${title} | ${C.siteName}`;
+  const pageOgImg = (article && st(`img/og/${article.slug}.jpg`)) ? abs(`img/og/${article.slug}.jpg`) : ogImg;
   const pub = `<a href="${P.url}" rel="nofollow">${P.name}</a>`;
   const navItems = [...CATS.map(c => [`/kategoria/${c.slug}/`, c.name, c.slug]), ['/o-nas/', 'O nas']];
   const crumbHTML = crumbs ? `<nav class="crumbs" aria-label="Okruszki"><ol>${crumbs.map(([n, cp], i) => i === crumbs.length - 1 ? `<li><span aria-current="page">${esc(n)}</span></li>` : `<li><a href="${u(cp)}">${esc(n)}</a></li>`).join('')}</ol></nav>` : '';
@@ -181,10 +182,10 @@ ${noindex ? '<meta name="robots" content="noindex,follow">\n' : ''}${noindex ===
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:url" content="${canonical}">
-${ogImg ? `<meta property="og:image" content="${ogImg}">\n` : ''}${article ? `<meta property="article:published_time" content="${article.date}">\n<meta property="article:modified_time" content="${article.updated}">\n<meta property="article:section" content="${esc(CAT[article.category].name)}">\n` : ''}<meta name="twitter:card" content="${ogImg ? 'summary_large_image' : 'summary'}">
+${pageOgImg ? `<meta property="og:image" content="${pageOgImg}">\n` : ''}${article ? `<meta property="article:published_time" content="${article.date}">\n<meta property="article:modified_time" content="${article.updated}">\n<meta property="article:section" content="${esc(CAT[article.category].name)}">\n` : ''}<meta name="twitter:card" content="${pageOgImg ? 'summary_large_image' : 'summary'}">
 <meta name="twitter:title" content="${esc(title)}">
 <meta name="twitter:description" content="${esc(description)}">
-${ogImg ? `<meta name="twitter:image" content="${ogImg}">\n` : ''}<meta name="theme-color" content="#ffffff">
+${pageOgImg ? `<meta name="twitter:image" content="${pageOgImg}">\n` : ''}<meta name="theme-color" content="#ffffff">
 ${ICONS}
 <link rel="sitemap" type="application/xml" href="${u('sitemap.xml')}">
 ${FONT_PRELOAD}
@@ -256,7 +257,7 @@ for (const a of arts) {
 ${a.layout === 'glossary' ? `<nav class="toc" aria-label="Spis haseł"><h2 class="toc-h">Spis haseł</h2><ul>${a.terms.map(t => `<li><a href="#${t.id}">${esc(t.name)}</a></li>`).join('')}</ul></nav>` : ''}<div class="prose">${a.html}</div></article>${rel.length ? `<section class="related" aria-labelledby="rel-h"><h2 id="rel-h">Czytaj też</h2><ul class="cards">${rel.map(x => card(x, 'h3')).join('')}</ul></section>` : ''}`,
     schema: [{ '@type': 'Article', '@id': abs(a.url) + '#article', headline: a.title, description: a.description, datePublished: a.date, dateModified: a.updated,
       inLanguage: 'pl-PL', articleSection: c.name, wordCount: a.text.split(' ').length, url: abs(a.url), mainEntityOfPage: abs(a.url),
-      author: ORG, publisher: ORG, isPartOf: { '@id': abs('#website') }, ...(a.citation.length ? { citation: a.citation } : {}), ...(ogImg ? { image: ogImg } : {}),
+      author: ORG, publisher: ORG, isPartOf: { '@id': abs('#website') }, ...(a.citation.length ? { citation: a.citation } : {}), ...((st(`img/og/${a.slug}.jpg`) ? abs(`img/og/${a.slug}.jpg`) : ogImg) ? { image: st(`img/og/${a.slug}.jpg`) ? abs(`img/og/${a.slug}.jpg`) : ogImg } : {}),
       ...(a.layout === 'glossary' ? { mainEntity: { '@id': abs(a.url) + '#terms' } } : {}) },
       ...(a.layout === 'glossary' ? [{ '@type': 'DefinedTermSet', '@id': abs(a.url) + '#terms', name: a.title, url: abs(a.url), inLanguage: 'pl-PL',
         hasDefinedTerm: a.terms.map(t => ({ '@type': 'DefinedTerm', '@id': abs(a.url) + '#' + t.id, name: t.name, url: abs(a.url) + '#' + t.id, ...(t.description ? { description: t.description } : {}), inDefinedTermSet: { '@id': abs(a.url) + '#terms' } })) }] : []),

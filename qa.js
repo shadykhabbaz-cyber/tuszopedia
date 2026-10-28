@@ -148,6 +148,8 @@ for (const f of TEXT) {
   if (/DO POTWIERDZENIA|DO UZUPE[ŁL]NIENIA/i.test(t)) E('marker', r);
   if (/św\.?\s*Barbary|18\s+Stycznia|Barbary\s*46/i.test(t)) E('old-address', r);
   if (/508[\s-]*492[\s-]*400|48508492400/.test(t)) E('nr-508', r);
+  if (/795[\s-]*361[\s-]*218|48795361218/.test(t)) E('nr-795', r);
+  if (/C./i.test(t) && !r.endsWith('qa.js')) E('carrefour', r);
   if (f.endsWith('.html') && /<!--/.test(t)) E('html-comment', r);
   if (/aggregateRating|priceRange/.test(t)) E('forbidden-schema-key', r);
 }

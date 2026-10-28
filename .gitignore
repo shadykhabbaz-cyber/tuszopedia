@@ -3,3 +3,6 @@ dist/
 dist-preview/
 .lighthouse/
 _szkice/
+
+raport-poradnik*.md
+*.backup*
