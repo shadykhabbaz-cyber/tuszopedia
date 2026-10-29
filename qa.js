@@ -152,8 +152,8 @@ for (const f of TEXT) {
   if (new RegExp("carre" + "four", "i").test(t) && !r.endsWith("qa.js")) E("banned-store", r);
   if (new RegExp("happy[\\s\\u00a0]*kids", "i").test(t) && !r.endsWith("qa.js")) E("banned-hk", r);
   if (new RegExp("ink[\\s\\u00a0-]*lab", "i").test(t) && !r.endsWith("qa.js")) E("banned-il", r);
-  // t192u: zero wzmianek o usuwaniu tatuaży i laserze
-  if (/usuwa\w*[\s\u00a0-]*tatua[zż]|usunięci\w*[\s\u00a0-]*tatua[zż]|laser|tattoo[\s\u00a0-]*removal/i.test(t) && !r.endsWith("qa.js")) E("banned-usuwanie-laser", r);
+  // t175u: bez oferty laserowej
+  if (/laser/i.test(t) && !r.endsWith("qa.js")) E("banned-laser", r);
   if (f.endsWith('.html') && /<!--/.test(t)) E('html-comment', r);
   if (/aggregateRating|priceRange/.test(t)) E('forbidden-schema-key', r);
 }
