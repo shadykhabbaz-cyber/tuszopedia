@@ -3,7 +3,7 @@ title: "Czy jestem gotowy na tatuaż?"
 description: "Czy to dobry moment na tatuaż? Pytania o motywację, presję otoczenia, cierpliwość i budżet, które pomagają podjąć decyzję na chłodno, zanim umówisz sesję."
 category: pierwszy-tatuaz
 date: 2026-10-22
-updated: 2026-10-22
+updated: 2026-10-29
 slug: czy-jestem-gotowy-na-tatuaz
 draft: false
 ---
@@ -11,7 +11,7 @@ Gotowość na tatuaż nie zależy od tego, czy masz już idealny projekt. Chodzi
 
 ## Dlaczego decyzja jest ważniejsza niż wzór
 
-Wzór można zmienić na każdym etapie projektowania. Decyzji o samym tatuażu po sesji nie da się już cofnąć jednym ruchem. Amerykańska Agencja Żywności i Leków (FDA) przypomina, że tatuaże permanentne są projektowane tak, by zostały na całe życie, a ich usunięcie jest trudne ([FDA](https://www.fda.gov/consumers/consumer-updates/think-you-ink-tattoo-safety)).
+Wzór można zmienić na każdym etapie projektowania. Decyzji o samym tatuażu po sesji nie da się już cofnąć jednym ruchem. Amerykańska Agencja Żywności i Leków (FDA) przypomina, że tatuaże permanentne są projektowane tak, by zostały na całe życie ([FDA](https://www.fda.gov/consumers/consumer-updates/think-you-ink-tattoo-safety)).
 
 To nie powód do strachu, tylko do uczciwej rozmowy z samym sobą. Dobrym sprawdzianem jest jedno zdanie. Spróbuj dokończyć zdanie: „Chcę tego tatuażu, bo…”. Jeśli odpowiedź przychodzi łatwo i nie dotyczy cudzych oczekiwań, to dobry punkt wyjścia.
 

@@ -3,7 +3,7 @@ title: "Jak tusz zostaje w skórze na lata"
 description: "Dlaczego tatuaż nie schodzi razem z naskórkiem? Skóra właściwa, makrofagi, które przechwytują pigment, i jego wędrówka do węzłów chłonnych – według badań."
 category: jak-to-dziala
 date: 2026-10-22
-updated: 2026-10-22
+updated: 2026-10-29
 slug: jak-tusz-zostaje-w-skorze
 draft: false
 ---
@@ -57,11 +57,11 @@ Trwały nie znaczy niezmienny. Badania opisane wyżej tłumaczą, dlaczego tatua
 
 Dlatego Amerykańska Akademia Dermatologii zaleca ochronę przeciwsłoneczną zagojonego tatuażu ([AAD](https://www.aad.org/public/everyday-care/skin-care-basics/tattoos/caring-for-tattooed-skin)).
 
-## Co to oznacza dla usuwania tatuażu
+## Co to oznacza dla trwałości tatuażu
 
-Tytuł pracy Baranskiej i współpracowników mówi wprost, że dynamika makrofagów wyjaśnia zarówno trwałość tatuażu, jak i trudności z jego usuwaniem. Autorzy przypominają, że usunięcie tatuażu wymaga wielu cykli zabiegów, a niektóre tatuaże nie dają się usunąć całkowicie. Jeśli pigment uwolniony z komórek jest wychwytywany ponownie przez nowe makrofagi, łatwiej zrozumieć, dlaczego efekt przychodzi stopniowo.
+Tytuł pracy Baranskiej i współpracowników mówi wprost, że dynamika makrofagów wyjaśnia trwałość tatuażu. Jeśli pigment uwolniony z obumierających komórek jest wychwytywany ponownie przez nowe makrofagi, łatwiej zrozumieć, dlaczego dobrze wykonany tatuaż zostaje w skórze na lata.
 
-FDA dodaje z perspektywy konsumenta, że tatuaże permanentne są projektowane tak, by zostały na całe życie, a ich usunięcie jest trudne ([FDA](https://www.fda.gov/consumers/consumer-updates/think-you-ink-tattoo-safety)). O usunięciu tatuażu warto rozmawiać z dermatologiem.
+FDA dodaje z perspektywy konsumenta, że tatuaże permanentne są projektowane tak, by zostały na całe życie ([FDA](https://www.fda.gov/consumers/consumer-updates/think-you-ink-tattoo-safety)). Dlatego decyzję o wzorze i miejscu warto przemyśleć bez pośpiechu.
 
 ## Najważniejsze w pięciu punktach
 
@@ -69,7 +69,7 @@ FDA dodaje z perspektywy konsumenta, że tatuaże permanentne są projektowane t
 2. W skórze właściwej pigment przechwytują makrofagi.
 3. Gdy makrofagi obumierają, pigment przejmują nowe – według badań na myszach.
 4. Część pigmentu przemieszcza się do węzłów chłonnych.
-5. Ten sam mechanizm tłumaczy, dlaczego usuwanie tatuażu jest stopniowe i trudne.
+5. Ten sam mechanizm tłumaczy, dlaczego tatuaż jest trwały.
 
 ## Pytania i odpowiedzi
 
