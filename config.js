@@ -26,7 +26,7 @@ module.exports = {
   categories: [
     { slug: 'pierwszy-tatuaz', bg: '#2A3BD1', fg: '#FFFFFF', /* cobalt */ name: 'Pierwszy tatuaż i decyzja', description: 'Jak podjąć dobrą decyzję o tatuażu: gotowość, wiek dorosły, praca, zmiany ciała i test przed tatuażem.' },
     { slug: 'zdrowie-i-bezpieczenstwo', bg: '#0E7356', fg: '#FFFFFF', /* mint */ name: 'Zdrowie i bezpieczeństwo', description: 'Tusze, zakażenia, ciąża i choroby przewlekłe – stan wiedzy według GIS, ECHA, NIZP PZH-PIB i dermatologów.' },
-    { slug: 'jak-to-dziala', bg: '#6B3FD4', fg: '#FFFFFF', /* violet */ name: 'Jak to działa', description: 'Nauka i technika tatuażu: skóra i pigment, maszynki, blowout, usuwanie laserem i słownik pojęć.' },
+    { slug: 'jak-to-dziala', bg: '#6B3FD4', fg: '#FFFFFF', /* violet */ name: 'Jak to działa', description: 'Nauka i technika tatuażu: skóra i pigment, blowout i słownik pojęć.' },
     { slug: 'ciekawostki', bg: '#D7F25A', fg: '#15151A', /* lime / ink */ name: 'Ciekawostki, historia i kultura', description: 'Historia tatuażu na świecie i w Polsce, tatuaż w innych kulturach, symbole i mity.' },
     { slug: 'prawo-i-przepisy', bg: '#B8321C', fg: '#FFFFFF', /* tomato-text */ name: 'Prawo i przepisy', description: 'Przepisy sanitarne, tusze w UE, prawo autorskie, zgoda i dane osobowe, zawód tatuatora – informacje ogólne, nie porada prawna.',
       noindexUntilPublished: 'wymagania-sanitarne-studio-tatuazu' }, // artykuł nr 25 planu SEO
